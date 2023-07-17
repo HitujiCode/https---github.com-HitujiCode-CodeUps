@@ -1,0 +1,90 @@
+@use "global" as *;
+
+.campaign-card {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 10px 0 rgb($black, 0.25);
+}
+
+.campaign-card__img {
+}
+
+.campaign-card__img img {
+    aspect-ratio: 280 / 188;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    @include mq("md") {
+        aspect-ratio: 333 / 223;
+    }
+}
+
+.campaign-card__content {
+    padding: rem(16) rem(16) rem(24);
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.campaign-card__head {
+    padding: rem(16) 0 rem(8);
+}
+
+.campaign-card__label {
+    width: fit-content;
+}
+
+.campaign-card__body {
+    margin-top: rem(4);
+    flex-grow: 1;
+}
+
+.campaign-card__title {
+    margin-top: rem(4);
+    font-size: rem(16);
+    color: $green;
+    font-weight: $medium;
+    line-height: calc(24 / 16);
+    flex-grow: 1;
+    padding-bottom: rem(8);
+    border-bottom: 1px solid $accent;
+}
+
+.campaign-card__text {
+    margin-top: rem(8);
+    color: $green;
+    font-size: rem(14);
+    font-weight: $normal;
+    line-height: calc(24 / 14);
+    text-align: center;
+}
+
+.campaign-card__price {
+    margin-top: rem(8);
+    display: flex;
+    gap: rem(16);
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.campaign-card__old-price,
+.campaign-card__new-price {
+    font-family: $fourth-font-family;
+    line-height: 1;
+    font-weight: $bold;
+}
+
+.campaign-card__old-price {
+    color: $green;
+    font-size: rem(20);
+    text-decoration-line: line-through;
+    text-decoration-thickness: 3px;
+    text-decoration-color: red;
+}
+
+.campaign-card__new-price {
+    color: $accent;
+    font-size: rem(32);
+}
