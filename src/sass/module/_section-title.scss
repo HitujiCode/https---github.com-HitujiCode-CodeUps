@@ -28,3 +28,14 @@
     line-height: calc(18 / 12);
     color: $accent;
 }
+
+.section-title__en--contact {
+    @extend .section-title__en;
+    font-size: rem(80);
+    line-height: 1;
+
+    @include mq("md") {
+        font-size: rem(80);
+        line-height: 1;
+    }
+}
