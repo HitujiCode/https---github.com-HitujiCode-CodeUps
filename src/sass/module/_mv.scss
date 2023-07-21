@@ -4,22 +4,33 @@
     position: relative;
     width: 100%;
     height: 100vh;
+    min-height: rem(400);
 }
 
 .mv__inner {
+    height: inherit;
 }
 
-.mv__img {
-}
+.mv__swiper {
+    height: inherit;
 
-.mv__img img {
-    aspect-ratio: 375/667;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    .swiper-wrapper {
+        height: inherit;
+    }
 
-    @include mq("md") {
-        aspect-ratio: 1440/768;
+    .swiper-slide {
+        height: inherit;
+    }
+
+    .swiper-slide img {
+        aspect-ratio: 375/667;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+        @include mq("md") {
+            aspect-ratio: 1440/768;
+        }
     }
 }
 
@@ -28,4 +39,5 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 1;
 }

@@ -1,0 +1,96 @@
+@use "global" as *;
+.campaign {
+}
+
+.campaign__inner {
+}
+
+.campaign__container {
+    // margin-right: calc(50% - 50vw);
+    // padding-right: calc((50vw - 50%));
+    // overflow: hidden;
+}
+
+.campaign__wrapper {
+    margin-top: rem(24);
+    position: relative;
+    margin-left: rem(15);
+
+    @include mq("md") {
+        margin-top: rem(40);
+        margin-left: max(rem(25), calc(50% - rem(540)));
+    }
+}
+
+.campaign__swiper {
+    padding-bottom: rem(10);
+
+    .swiper-wrapper {
+    }
+
+    .swiper-slide {
+        height: auto;
+        max-width: rem(280);
+
+        @include mq("md") {
+            max-width: rem(333);
+        }
+    }
+}
+
+.campaign__items {
+}
+
+.campaign__item {
+}
+
+.campaign__card {
+    height: 100%;
+}
+
+.campaign__card .swiper-slide {
+}
+
+.campaign__button-prev,
+.campaign__button-next {
+    width: rem(80);
+    height: rem(80);
+    position: absolute;
+    top: rem(-80);
+    left: auto;
+}
+
+.campaign__button-prev {
+    right: rem(160);
+}
+
+.campaign__button-next {
+    right: 0;
+}
+
+.campaign__button {
+    margin-top: rem(40);
+    text-align: center;
+
+    @include mq("md") {
+        margin-top: rem(80);
+    }
+}
+
+// test
+// .campaign__cards {
+//     display: flex;
+//     gap: rem(40);
+// }
+
+// .campaign__item {
+//     padding-bottom: rem(10);
+//     height: 100%;
+// }
+
+// .test-swiper {
+//     .swiper-slide {
+//         width: rem(333);
+//         height: auto;
+//     }
+// }

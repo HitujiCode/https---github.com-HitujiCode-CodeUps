@@ -20,9 +20,6 @@
 }
 
 .voice-card__left {
-    border-bottom: 1px solid $accent;
-    padding-bottom: rem(4);
-
     @include mq("md") {
         width: calc(61.87% - rem(16));
     }
@@ -53,6 +50,8 @@
     font-size: rem(16);
     font-weight: $medium;
     line-height: calc(23 / 16);
+    border-bottom: 1px solid $accent;
+    padding-bottom: rem(4);
 
     @include mq("md") {
         font-size: rem(24);

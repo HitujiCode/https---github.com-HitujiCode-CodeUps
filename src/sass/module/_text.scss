@@ -6,7 +6,14 @@
     line-height: calc(24 / 16);
 }
 
-.text--black {
+.text--pc-black {
     @extend .text;
     color: $black;
+}
+
+.text--pc-white {
+    @extend .text;
+    @include mq("md") {
+        color: $white;
+    }
 }
