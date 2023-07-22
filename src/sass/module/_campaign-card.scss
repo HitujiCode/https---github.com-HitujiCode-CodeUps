@@ -3,9 +3,8 @@
 .campaign-card {
     display: flex;
     flex-direction: column;
-    height: 100%;
     box-shadow: 2px 2px 10px 0 rgb($black, 0.25);
- 
+    height: 100%;
 }
 
 .campaign-card__img {
@@ -31,6 +30,7 @@
 
     @include mq("md") {
         padding-top: rem(24);
+        padding-bottom: rem(40);
     }
 }
 
@@ -79,6 +79,11 @@
     gap: rem(16);
     justify-content: center;
     align-items: flex-end;
+    font-family: $fourth-font-family;
+
+    @include mq("md") {
+        gap: rem(24);
+    }
 }
 
 .campaign-card__old-price,

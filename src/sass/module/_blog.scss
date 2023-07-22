@@ -21,14 +21,13 @@
 }
 
 .blog__inner.inner {
-    padding: 0 rem(21);
 }
 
 .blog__title {
 }
 
 .blog__cards {
-    margin-top: rem(24);
+    margin-top: rem(28);
     display: grid;
     gap: rem(40);
     justify-content: center;
@@ -48,6 +47,7 @@
 .blog__button {
     text-align: center;
     margin-top: rem(40);
+    padding-bottom: rem(4);
 
     @include mq("md") {
         margin-top: rem(80);
@@ -58,8 +58,8 @@
     width: rem(437);
     height: rem(201);
     position: absolute;
-    top: rem(24);
-    left: calc(50% - min(49vw, 38.75rem));
+    top: rem(28);
+    left: calc(50% - min(49vw, rem(622)));
 }
 
 .blog__fish img {

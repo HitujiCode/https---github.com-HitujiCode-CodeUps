@@ -2,7 +2,7 @@
 
 .voice-card {
     box-shadow: 2px 2px 10px 0 rgb($black, 0.25);
-    padding: rem(16) rem(16) rem(24);
+    padding: rem(15) rem(16) rem(24);
 
     @include mq("md") {
         padding: rem(24);
@@ -20,6 +20,8 @@
 }
 
 .voice-card__left {
+    width: calc(51.76% - rem(13));
+
     @include mq("md") {
         width: calc(61.87% - rem(16));
     }
@@ -46,7 +48,7 @@
 }
 
 .voice-card__title {
-    margin-top: rem(8);
+    margin-top: rem(7);
     font-size: rem(16);
     font-weight: $medium;
     line-height: calc(23 / 16);
@@ -60,6 +62,8 @@
 }
 
 .voice-card__img {
+    width: 48.24%;
+
     @include mq("md") {
         width: 38.13%;
     }

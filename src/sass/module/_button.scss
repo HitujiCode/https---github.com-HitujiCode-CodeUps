@@ -10,7 +10,7 @@
     font-size: rem(14);
     font-family: $third-font-family;
     line-height: calc(22 / 14);
-    padding: rem(15) 0;
+    padding: rem(15.2) 0;
     position: relative;
     border: 1px solid $accent;
     transition: background-color 0.3s ease;
@@ -46,10 +46,11 @@
 }
 
 .button span::after {
+    display: inline-block;
     position: absolute;
     content: "";
     background-image: url("../../assets/images/common/button-arrow-white.svg");
-    background-size: contain;
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
     width: rem(40);

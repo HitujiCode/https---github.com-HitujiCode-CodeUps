@@ -12,14 +12,14 @@
 
 .aboutus__container {
     position: relative;
-}
-
-.aboutus__images {
-    margin-top: rem(50);
+    margin-top: rem(55);
 
     @include mq("md") {
         margin-top: rem(120);
     }
+}
+
+.aboutus__images {
 }
 
 .aboutus__left-img {
@@ -55,8 +55,7 @@
 
     @include mq("md") {
         position: absolute;
-        top: 35%;
-        transform: translateY(-50%);
+        top: 14%;
         left: 18.51%;
         display: flex;
         gap: min(1vw, 4.5%);
@@ -87,11 +86,16 @@
 
 .aboutus__text-block {
     margin-top: rem(16);
+
+    @include mq("md") {
+        margin-top: 0;
+    }
 }
 
 .aboutus__button {
     text-align: center;
     margin-top: rem(40);
+    padding-bottom: rem(4);
 }
 
 .aboutus__coral {
@@ -99,7 +103,7 @@
     height: rem(181);
     position: absolute;
     bottom: min(rem(-90));
-    right: calc(50% - min(49.9vw, 40rem));
+    right: calc(50% - min(49.9vw, 39.9rem));
 }
 
 .aboutus__coral img {

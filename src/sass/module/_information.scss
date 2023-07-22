@@ -14,7 +14,7 @@
         margin-top: rem(40);
         display: flex;
         gap: rem(48);
-        align-items: center;
+        align-items: flex-start;
     }
 }
 
@@ -34,11 +34,11 @@
 }
 
 .information__body {
-    padding: rem(24) 0;
+    margin-top: rem(24);
 
     @include mq("md") {
-        flex: 1;
-        padding: rem(60) 0;
+        margin-top: rem(64);
+        width: calc(50% - rem(48));
     }
 }
 
@@ -52,6 +52,7 @@
     @include mq("md") {
         font-size: rem(24);
         line-height: 1;
+        padding-bottom: rem(8);
     }
 }
 
@@ -62,4 +63,5 @@
 .information__button {
     text-align: center;
     margin-top: rem(40);
+    padding-bottom: rem(4);
 }

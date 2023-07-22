@@ -84,20 +84,27 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
         // キャンペーンスライダー
         const campaignSwiper = new Swiper(".js-campaign-swiper", {
           loop: true,
-          autoHeight: true,
           spaceBetween: 24,
-          slidesPerView: "auto",
+          slidesPerView: "1",
+          loopedSlides: "4",
           speed: 2000,
-          loopAdditionalSlides: 3,
+          width:280,
           // autoplay: {
           //   delay: 2000,
           //   disableOnInteraction: false,
           // },
            breakpoints: { //ブレークポイントの設定 小さい順に設定する！！
             768: {
+          slidesPerView: "3.42",
           spaceBetween: 40,
+          width: 1235,
             },
           },
+            1920: {
+        slidesPerView: "5",
+        spaceBetween: 40,
+        width: 1825,
+      },
                  // 前後の矢印
   navigation: {
     nextEl: ".swiper-button-next",
@@ -105,7 +112,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   },
         });
 
-        
+   
 
         // ヘッダーのホバーアクション
         $(function () {
@@ -126,8 +133,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
         });
 
         // 画像のインビュー
-        //要素の取得とスピードの設定
-var box = $('.colorbox'),
+let box = $('.colorbox'),
 speed = 700;  
 
 //.colorboxの付いた全ての要素に対して下記の処理を行う
@@ -151,22 +157,5 @@ color.on('inview', function(){
       }
  });
 });
-        // 画像のアニメーション
-        //   $(window).on('scroll', function() {
-        //     $('.information__color').each(function() {
-        //         let elemPos = $(this).offset().top;
-        //         let scroll = $(window).scrollTop();
-        //         let windowHeight = $(window).height();
-
-        //         if (scroll >= elemPos - windowHeight) {
-        //             // Add the animation
-        //             $(this).css('animation', 'open 1s forwards');
-        //         } else {
-        //             // Remove the animation
-        //             $(this).css('animation', '');
-        //         }
-        //     });
-        // });
-
 
 });

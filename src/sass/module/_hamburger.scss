@@ -11,7 +11,7 @@
 }
 
 .hamburger.is-active {
-    overflow: hidden;
+    width: rem(40);
 }
 
 .hamburger span {
@@ -40,7 +40,8 @@
 
 .hamburger.is-active span:first-child {
     top: rem(12);
-    transform: skew(0deg, 37deg);
+    left: rem(4);
+    rotate: 37deg;
 }
 
 .hamburger.is-active span:nth-child(2) {
@@ -49,5 +50,6 @@
 
 .hamburger.is-active span:nth-child(3) {
     top: rem(12);
-    transform: skew(0deg, -37deg);
+    left: rem(4);
+    rotate: -37deg;
 }

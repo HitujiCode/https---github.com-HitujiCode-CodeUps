@@ -5,36 +5,29 @@
 .campaign__inner {
 }
 
-.campaign__container {
-    // margin-right: calc(50% - 50vw);
-    // padding-right: calc((50vw - 50%));
-    // overflow: hidden;
-}
-
 .campaign__wrapper {
-    margin-top: rem(24);
     position: relative;
-    margin-left: rem(15);
+    margin-top: rem(24);
 
     @include mq("md") {
         margin-top: rem(40);
-        margin-left: max(rem(25), calc(50% - rem(540)));
     }
 }
 
+.campaign__items {
+}
+
 .campaign__swiper {
-    padding-bottom: rem(10);
+    margin-right: calc(50% - 50vw);
 
     .swiper-wrapper {
+        position: relative;
+        margin-right: calc(50% - 50vw);
+        padding-bottom: rem(14);
     }
 
     .swiper-slide {
         height: auto;
-        max-width: rem(280);
-
-        @include mq("md") {
-            max-width: rem(333);
-        }
     }
 }
 
@@ -69,28 +62,11 @@
 }
 
 .campaign__button {
-    margin-top: rem(40);
+    margin-top: rem(30);
     text-align: center;
+    padding-bottom: rem(4);
 
     @include mq("md") {
-        margin-top: rem(80);
+        margin-top: rem(70);
     }
 }
-
-// test
-// .campaign__cards {
-//     display: flex;
-//     gap: rem(40);
-// }
-
-// .campaign__item {
-//     padding-bottom: rem(10);
-//     height: 100%;
-// }
-
-// .test-swiper {
-//     .swiper-slide {
-//         width: rem(333);
-//         height: auto;
-//     }
-// }

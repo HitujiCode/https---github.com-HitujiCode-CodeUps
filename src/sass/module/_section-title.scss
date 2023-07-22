@@ -48,7 +48,7 @@
     }
 }
 
-.section-title__en--contact {
+.section-title__en--large {
     @extend .section-title__en;
     font-size: rem(80);
     line-height: 1;
@@ -57,4 +57,9 @@
         font-size: rem(80);
         line-height: 1;
     }
+}
+
+.section-title__ja--large {
+    @extend .section-title__ja;
+    margin-top: rem(-6);
 }

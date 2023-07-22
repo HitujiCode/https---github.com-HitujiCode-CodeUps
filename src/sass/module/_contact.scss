@@ -17,20 +17,27 @@
         padding: rem(80) 0;
         box-shadow: 4px 4px 10px 0px rgb($black, 0.25);
         display: flex;
-        justify-content: center;
-        gap: 7.6%;
+        justify-content: left;
     }
 }
 
 .contact__info {
+    padding: 0 rem(25);
+
     @include mq("md") {
-        width: 40.74%;
+        width: 53%;
+        padding-left: rem(50);
+        padding-right: rem(82);
     }
 }
 
 .contact__head {
     border-bottom: 1px solid $accent;
     margin: 0 auto;
+
+    @include mq("md") {
+        padding-bottom: rem(5);
+    }
 }
 
 .contact__logo {
@@ -43,6 +50,8 @@
 }
 
 .contact__wrapper {
+    margin-top: rem(16);
+
     @include mq("md") {
         display: flex;
         gap: rem(20);
@@ -51,8 +60,6 @@
 }
 
 .contact__address-wrap {
-    margin-top: rem(16);
-
     @include mq("md") {
         text-align-last: left;
         flex-shrink: 0;
@@ -60,14 +67,12 @@
     }
 }
 
-.contact__address:not(:first-child) {
+.contact__address-wrap p:not(:first-of-type) {
     margin-top: rem(4);
 }
 
-.contact__address {
-}
-
 .contact__tel {
+    text-transform: uppercase;
 }
 
 .contact__opening-hours {
@@ -101,9 +106,9 @@
     margin-top: rem(40);
 
     @include mq("md") {
-        margin-top: 0;
+        margin-top: rem(24);
         border-left: 1px solid $accent;
-        width: 43.54%;
+        padding: 0 rem(80);
     }
 }
 
@@ -123,6 +128,7 @@
 
 .contact__button {
     margin-top: rem(40);
+    padding-bottom: rem(4);
 }
 
 .contact__fish {
@@ -134,7 +140,7 @@
 
     @include mq("md") {
         width: rem(301);
-        top: rem(-40);
+        top: rem(-36);
         height: rem(138);
         right: calc(50% - min(49vw, 41.875rem));
     }

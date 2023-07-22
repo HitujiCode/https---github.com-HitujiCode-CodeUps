@@ -9,6 +9,12 @@
     padding: 0;
     display: block;
     // cursor: pointer;
+
+    @include mq("md") {
+        width: rem(80);
+        height: rem(80);
+        right: rem(20);
+    }
 }
 
 .totop img {

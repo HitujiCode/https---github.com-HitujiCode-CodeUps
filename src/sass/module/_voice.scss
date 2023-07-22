@@ -8,13 +8,15 @@
 
 .voice__container {
     position: relative;
+    margin-top: rem(40);
+    margin-top: rem(34);//ピクパ確認用
+
 }
 
 .voice__title {
 }
 
 .voice__cards {
-    margin-top: rem(40);
     display: grid;
     gap: rem(40);
 
@@ -32,6 +34,7 @@
 .voice__button {
     text-align: center;
     margin-top: rem(40);
+    padding-bottom: rem(4);
 
     @include mq("md") {
         margin-top: rem(80);
@@ -42,7 +45,7 @@
     width: rem(301);
     height: rem(138);
     position: absolute;
-    top: rem(-200);
+    top: rem(-216);
     left: calc(50% - min(49vw, 38.75rem));
 }
 
