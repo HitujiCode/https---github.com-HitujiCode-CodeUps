@@ -1,6 +1,31 @@
 
 jQuery(function ($) { // この中であればWordpressでも「$」が使用可能になる
 
+// ローディング
+$(window).on('load', function() {
+  setTimeout(function() {
+      $(".loader__title--green").addClass("is-active");
+  }, 100);
+  setTimeout(function() {
+      $(".loader__left").addClass("is-active");
+  }, 1500);
+  setTimeout(function() {
+      $(".loader__right").addClass("is-active");
+  }, 1580);
+  setTimeout(function() {
+      $(".loader__title").addClass("is-active");
+  }, 3000);
+});
+
+$(".loader__title").on('animationend', function() {
+  setTimeout(function() {
+      $(".loader").animate({ opacity: 0 }, 1000, function() {
+          $(this).remove();
+      });
+  }, 500);
+});
+
+
   // ドロワーメニュー
     let scrollTop = 0;
 
@@ -85,26 +110,21 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
         const campaignSwiper = new Swiper(".js-campaign-swiper", {
           loop: true,
           spaceBetween: 24,
-          slidesPerView: "1",
-          loopedSlides: "4",
+          slidesPerView: "1.2",
           speed: 2000,
-          width:280,
-          // autoplay: {
-          //   delay: 2000,
-          //   disableOnInteraction: false,
-          // },
-           breakpoints: { //ブレークポイントの設定 小さい順に設定する！！
+          width: 340.8,
+          autoplay: {
+            delay: 2000,
+            disableOnInteraction: false,
+          },
+           breakpoints: {
             768: {
           slidesPerView: "3.42",
           spaceBetween: 40,
           width: 1235,
             },
           },
-            1920: {
-        slidesPerView: "5",
-        spaceBetween: 40,
-        width: 1825,
-      },
+
                  // 前後の矢印
   navigation: {
     nextEl: ".swiper-button-next",
@@ -157,5 +177,7 @@ color.on('inview', function(){
       }
  });
 });
+
+
 
 });

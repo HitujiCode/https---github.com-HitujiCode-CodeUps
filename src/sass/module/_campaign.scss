@@ -5,6 +5,11 @@
 .campaign__inner {
 }
 
+.campaign__container {
+    overflow: hidden;
+    padding-top: rem(10);
+}
+
 .campaign__wrapper {
     position: relative;
     margin-top: rem(24);
@@ -31,17 +36,8 @@
     }
 }
 
-.campaign__items {
-}
-
-.campaign__item {
-}
-
 .campaign__card {
     height: 100%;
-}
-
-.campaign__card .swiper-slide {
 }
 
 .campaign__button-prev,

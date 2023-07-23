@@ -7,13 +7,15 @@
     width: 100%;
     height: 100vh;
     background-color: $accent;
-    visibility: hidden;
+    opacity: 0;
     left: -100%;
-    transition: left 0.3s ease-in-out;
+    transition:
+        left 0.3s ease-in-out,
+        opacity 0.3s ease-in-out;
 }
 
 .sp-nav.is-active {
-    visibility: visible;
+    opacity: 1;
     left: 0;
 }
 

@@ -8,7 +8,6 @@
     z-index: 300;
     padding: 0;
     display: block;
-    // cursor: pointer;
 
     @include mq("md") {
         width: rem(80);
